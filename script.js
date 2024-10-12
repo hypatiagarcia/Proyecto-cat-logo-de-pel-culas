@@ -1,4 +1,4 @@
-const apiKey = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5ZTJhYTRlZjJlMWMyYmFjMDE2YjE2NTQ2NjMwYWM0YSIsIm5iZiI6MTcyODY4OTk3Ny4xODM1NzUsInN1YiI6IjY3MDg1MTdiNjJjZDI5OGJiNzVlOWIxYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.PvhP-pgDUO1_Na9Z2yJ4iE87hAMsBNt0nKCMY46vScg'; // Reemplaza con tu clave API
+const apiKey = '9e2aa4ef2e1c2bac016b16546630ac4a'
 const apiUrl = 'https://api.themoviedb.org/3';
 const movieList = document.getElementById('movies');
 const movieDetails = document.getElementById('movie-details');
