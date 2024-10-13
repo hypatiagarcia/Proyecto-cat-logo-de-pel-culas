@@ -41,6 +41,12 @@ async function showMovieDetails(movieId) {
         const respuesta_detalles = await fetch(`${apiUrl}/movie/${movieId}?api_key=${apiKey}&language=es-ES`)
         const data_detalles = await respuesta_detalles.json()
         selectedMovieId = data_detalles.id
+        detailsContainer.innerHTML = `
+            <h3>${data_detalles.title}</h3>
+            <p>${data_detalles.overview}</p>
+            <img src="https://image.tmdb.org/t/p/w500${data_detalles.poster_path}" alt="${data_detalles.title}">
+        `
+        document.getElementById('movie-details').style.display = 'block'
     } catch (error) {
         console.error('Error fetching movie details:', error);
     }
